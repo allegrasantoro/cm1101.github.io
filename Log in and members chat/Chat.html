@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--Calum Drysburgh-->
+<!--this page is only accessible through the log in section by inputting a right email and password
+like for example:
+  username: micheal
+  password: thriller123-->
+<html>
+
+    <head>
+        <title>Message board</title>
+        <!--linking the html file to the stylesheet-->
+        <link href="./Chat.css" type="text/css" rel="stylesheet">
+
+        <div class="top">
+          <!--logo-->
+          <div class="logo">
+              <img src="./logo.png" alt="logo">
+          </div>
+
+      </div>
+
+      <!--toolbar-->
+      <div class="navbar">
+        <a href="../Landing page/index.html">Home</a>
+        <a href="../Events/Events.html">Events</a>
+        <a href="../Members/SocietyMembers.html">Members</a>
+                    
+        <!--dropdown menu-->
+        <div class="dropdown">
+
+            <button class="dropbtn">Recommended</button>
+
+            <div class="dropdown-content">
+                <a href="../Films of the month/FOTM.html">Films of the month</a>
+                <a href="../Songs of the month/SOTM.html">Songs of the month</a>
+            </div>
+        </div>
+
+        <a href="../Photogallery/photo-gallery.html">Photogallery</a>
+        <a href="../Contact us/Contact us.html">Contacts</a>
+        <a href="../FAQ/FAQ.html">FAQ</a>
+      </div>
+
+    </head>
+
+<body>
+
+  <!--custom title-->
+  <div class="titleimage">
+      <img src="./message-board.png" alt="Message board'">
+  </div>
+
+  <!--setting some sample messages for dimonstration purposes since, without the use of a server, the messages written by the user will dissapear when the page is refreshed-->
+  <ul id="myUL">
+    <li>Remember to buy gluten free snacks for Tuesday's screening</li>
+    <li>I'll get them -Eleven</li>
+    <li>Tomorrow we have to go to Atik to talk about the Disco Night</li>
+    <li>At what time?</li>
+    <li>6PM</li>
+    <li>Ok</li>
+    <li>Sorry I have a workshop I don't think I'll make it -Tom</li>
+    <li>Ok don't worry</li>
+    <li>!!!TUESDAY AT 5:30 PM AT UNION STREET TO TEST THE AUDIO/VIDEO AND SET UP THE SNACKS!!!</li>
+    <li>Please don't be late</li>
+    <li>Can someone go buy beverages?</li>
+    <li>I'll go -Michael</li>
+    <li>We need normal and sparkly water, pepsy and juice</li>
+    <li>And whatever cool drink you can find</li>
+  </ul>
+
+  <!--input-->
+  <div id="myDIV" class="header">
+    <h2 style="margin:5px">Messanger</h2>
+    <input type="text" id="myInput" placeholder="Send a message to the chat...">
+    <span onclick="newElement()" class="addBtn">Send</span>
+  </div>
+
+<script>
+
+//The funtion used to add new messages to the chat box - taken from W3schools "to do list" - 
+function newElement() {
+    
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+      
+    //input validation, the box will not appand a blank text box but instead ask for an input 
+    if (inputValue === '') {
+      alert("please type to chat");
+    } else {
+      document.getElementById("myUL").appendChild(li); //appending value from textbox(chat message) given by the user 
+    }
+    //reseting textbox
+    document.getElementById("myInput").value = "";
+  
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+  
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+  }
+</script>
+
+</body>
+<!--"back to top" button-->
+<a href="#top">
+    <footer class="top-page">
+        <img src="./footer/arrow.png" alt= "arrow pointing up">
+        <img src="./footer/back-to-top.png" alt="Back to top">
+    </footer>
+</a>
+</html>

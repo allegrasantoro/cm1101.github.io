@@ -1,0 +1,264 @@
+/*Jicoby Kottinattu*/
+html { 
+    /*linking the background image*/
+    background: url(./background.png) center center; 
+    /*setting the background's size*/
+    background-size: 100%;
+    background-position: absolute;
+    background-repeat: repeat-y;
+    width: 100%;
+    height: 100%;
+    /*adding scroll animation for footer*/
+    scroll-behavior: smooth;
+}
+
+/*eliminating the automatic mangin set by my browser*/
+body {
+    margin: 0px;
+}
+
+/*setting the size and position of the title*/
+.titleimage img{
+    height: 50px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/*setting the size, position and style of the event rectangles*/
+.Events {
+    padding: 20px;
+    border: solid black 3px;
+    margin: 30px;
+    box-shadow: black 5px 5px;
+    transition: 1s;
+    font-family: monospace;
+    font-size: 14px;
+    min-height: 150px;
+    max-width: 70%;
+    float: left;
+}
+
+/*styling and positioning images*/
+.Events img {
+    border: solid black 3px;
+    margin: 10px;
+    width: 100px;
+    position: relative;
+    float: left;
+}
+
+/*styling titles*/
+.Events h3{
+    font-size: 18px;
+}
+
+/*changing background colour of individual events*/
+#Event1,
+#Event5 {
+    background-color: #FFF204;;
+}
+
+#Event2 {
+    background-color: #7BFE00;
+}
+
+#Event3 {
+    background-color: #00FEF3;
+}
+
+#Event4 {
+    background-color: #FFA91E;
+}
+
+/*styling and positioning calendar*/
+.Calendar {
+    background-color: #FF16B7;
+    border: black solid 3px;
+    width: 20%;
+    text-align: center;
+    box-shadow: black 5px 5px;
+    right: 25px;
+    top: 200px;
+    position: fixed;
+    font-family: monospace;
+    vertical-align: center;
+    transition: 1s;
+}
+
+/*sizing month name*/
+.Calendar img {
+    height: 30px;
+    margin: 10px;
+}
+
+/*styling text and table cells*/
+table, th, td {
+    border: 1px solid black;
+    font-family: monospace;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    margin-bottom: 10px;
+    height: 50px;
+    
+}
+
+/*sizing table*/
+ table {
+     width: 250px;
+ }
+
+/*changing the colour of the weekdays*/
+ th {
+    background-color: rgb(0, 102, 254)
+}
+
+/*changing the colour of the days*/
+td {
+     background-color: #00FEF3;
+ }
+
+ /*changing the colour of the cells with no days*/
+ .empty {
+     background-color: rgb(70, 206, 199);
+ }
+
+ /*changing the colour of the days during which an event takes place*/
+ .event-day {
+     background-color: #FFF204;
+ }
+
+ /*setting the "back to top" button at the bottom of the page*/
+    /*setting the background style and position*/
+    footer {
+        background-color: #FF16B7;
+        border: solid black 3px;  
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    /*setting the arrow on top  of the text*/
+    footer img {
+        height: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /*making the footer larger for when you hover over it*/
+    footer img:hover {
+        transform: scale(1.1);
+    }
+
+/*changing the automatic blue colour of the linked text to its default colour*/
+a { 
+    color: inherit; 
+}
+
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #fff205;
+    font-family: monospace;
+    border: black solid 3px;
+    box-shadow: black 5px 5px;
+    color: black;
+    width: 100%;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    padding: 16px 3%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    border-right: 2px solid black;
+    height: 54px;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 18px;
+    padding: 16px 16px;
+    background-color: #FFF205;
+    font-family: monospace; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a yellow background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: black;
+    color: #FFF205;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fcef04;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border: black solid 1px;
+    min-width: 160px;
+  }
+  
+  /* Add a black background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: black;
+    color: #fff205;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+  
+  /*removing default button border*/
+  button {
+    border: black;
+  }
+
+/*styling the top part of the screen*/
+.top {
+    width: 100%;
+}
+.logo img {
+    height: 70px;
+    float: left;
+    margin: 10px;
+}
+
+.login img{
+    height: 40px;
+    float: right;
+    margin: 30px;
+}
+  

@@ -1,0 +1,202 @@
+/*Petya Hranenikova*/
+html { 
+    /*linking the background image*/
+    background: url(./background.png) center center; 
+    /*setting the background's size*/
+    background-size: 100%;
+    background-position: absolute;
+    background-repeat: repeat-y;
+    width: 100%;
+    height: 100%;
+}
+
+/*eliminating default body margin*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*setting the size and position of the title*/
+.titleimage img{
+    height: 50px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.map {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 3%;
+}
+
+iframe{
+    padding: 1%;
+    background-color: #FF16B7;
+    width: 80%;
+    border: solid black 3px;
+    box-shadow: black 5px 5px;
+}
+
+.contacts {
+    width: 40%;
+    float: right;
+    background-color: #7bfe00;
+    padding: 10px;
+    border: solid black 3px;
+    box-shadow: black 5px 5px;
+    margin-top: 20px;
+    max-height: 474px;
+    margin-right: 3%;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border: solid black 2px;
+}
+form label{
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: black solid 1px;
+    border-radius: 4px;
+    width: 60%;
+    height: 40px;
+    background-color: rgb(206, 203, 203);
+}
+
+.socials {
+    background-color: white;
+    padding: 20px;
+    border: solid black 2px;
+    max-height: 270px;
+}
+.logo{
+    float: left;
+    height: 40px;
+}
+
+.socials h2{
+    font-family: monospace;
+    padding: 0%;
+    font-size: 20px;
+    position: relative;
+    height: 40px;
+}
+
+/*changing the automatic blue colour of the linked text to its default colour*/
+a { 
+    color: inherit; 
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #fff205;
+    font-family: monospace;
+    border: black solid 3px;
+    box-shadow: black 5px 5px;
+    color: black;
+    width: 100%;
+ }
+  
+ /* Links inside the navbar */
+ .navbar a {
+    float: left;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    padding: 16px 3%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+ }
+  
+ /* The dropdown container */
+ .dropdown {
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    border-right: 2px solid black;
+    height: 54px;
+ }
+  
+ /* Dropdown button */
+ .dropdown .dropbtn {
+    font-size: 18px;
+    padding: 16px 16px;
+    background-color: #FFF205;
+    font-family: monospace; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+ }
+  
+ /* Add a yellow background color to navbar links on hover */
+ .navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: black;
+    color: #FFF205;
+ }
+  
+ /* Dropdown content (hidden by default) */
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fcef04;
+    z-index: 1;
+ }
+  
+ /* Links inside the dropdown */
+ .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border: black solid 1px;
+    min-width: 160px;
+ }
+  
+ /* Add a black background color to dropdown links on hover */
+ .dropdown-content a:hover {
+    background-color: black;
+    color: #fff205;
+ }
+  
+ /* Show the dropdown menu on hover */
+ .dropdown:hover .dropdown-content{
+    display: block;
+ }
+
+ /*removing default button border*/
+ button {
+    border: black;
+ }
+
+ /*styling the top part of the screen*/
+.top {
+    width: 100%;
+}
+.logo img {
+    height: 70px;
+    float: left;
+    margin: 10px;
+}
+
+.login img{
+    height: 40px;
+    float: right;
+    margin: 30px;
+}

@@ -1,0 +1,199 @@
+/*Petya Hranenikova*/
+/*setting up the background*/
+html { 
+    /*linking the background image*/
+    background: url(./background.png) center center; 
+    /*setting the background's size*/
+    background-size: 100%;
+    background-position: absolute;
+    background-repeat: repeat-y;
+    width: 100%;
+    height: 100%;
+}
+
+/*eliminating default body margin*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*setting the size and position of the title*/
+.titleimage img{
+    height: 50px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/*setting the size and the initial transition of the content in the columns*/    
+.container div {
+    padding: 1%;
+    box-sizing: border-box;
+    transition: 1s;
+    
+} 
+
+/*setting the size of the columns*/
+.first-col, .second-col, .third-col, .fourth-col {
+    width: 25%;
+    float: left;
+    padding: 1%;
+    min-height: 100px;
+}
+
+/*setting the style and position of the posters*/
+.images img{
+    margin: 20;
+    border: solid black 3px;
+    box-shadow: black 5px 5px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*making the images larger when hovering over them*/
+.images img:hover{
+    transform: scale(1.1);
+}
+
+/*setting the style and position of the text and its background*/
+.text {
+    margin-top: 20px;
+    border: solid black 3px;
+    box-shadow: black 5px 5px;
+    height: 300px;
+    font-family: monospace;
+}
+
+/*setting the background colour of the text*/
+#text1 {
+    background-color: #FFA91E;
+}
+
+#text2 {
+    background-color: #FFF205;
+}
+
+#text3 {
+    background-color: #7BFE00;
+}
+
+#text4 {
+    background-color: #00FEF3;
+}
+
+/*setting the style of the film titles*/
+h3 {
+    text-align: center;
+    padding: 1%;
+    font-size: 24px;
+}
+
+/*removing the bullets from the list*/
+ul {
+    list-style-type: none;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #fff205;
+    font-family: monospace;
+    border: black solid 3px;
+    box-shadow: black 5px 5px;
+    color: black;
+    width: 100%;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    padding: 16px 3%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    border-right: 2px solid black;
+    height: 54px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 18px;
+    padding: 16px 16px;
+    background-color: #FFF205;
+    font-family: monospace; 
+    margin: 0; 
+}
+
+/* Add a yellow background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: black;
+    color: #FFF205;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fcef04;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border: black solid 1px;
+    min-width: 160px;
+}
+
+/* Add a black background color to dropdown links on hover */
+.dropdown-content a:hover {
+background-color: black;
+    color: #fff205;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/*removing default button border*/
+button {
+    border: black;
+}
+
+/*styling the top part of the screen*/
+.top {
+    width: 100%;
+}
+.logo img {
+    height: 70px;
+    float: left;
+    margin: 10px;
+}
+
+.login img{
+    height: 40px;
+    float: right;
+    margin: 30px;
+}

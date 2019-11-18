@@ -1,0 +1,186 @@
+/*Allegra Santoro*/
+html { 
+    /*linking the background image*/
+    background: url(./background.png) center center; 
+    /*setting the background's size*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: absolute;
+    /*adding scroll animation for footer*/
+    scroll-behavior: smooth;
+  }
+
+/*eliminating the automatic mangin set by my browser*/
+body {
+    margin: 0px;
+}
+
+/*setting the size and position of the title*/
+.titleimage img{
+    height: 50px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.gallery img{
+    width: 200px;
+    transition: 1s;
+    padding: 15px;
+    border: solid black 3px;
+    margin: 30px;
+    background-color: white;
+    box-shadow: black 5px 5px;
+    position: static;
+}
+
+.gallery img:hover {
+    filter: grayscale (100%);
+    transform: scale(1.1);
+    padding: 15px;
+    border: solid black 3px;
+    margin: 30px;
+    background-color: white;
+    box-shadow: black 5px 5px;
+}
+
+.year img{
+    height: 50px;
+    position: relative;
+    left: 35px;
+    transition: 1s;
+    padding-top: 30px;
+}
+
+/*setting the "back to top" button at the bottom of the page*/
+    /*setting the background style and position*/
+    footer {
+        background-color: #FF16B7;
+        border: solid black 3px;  
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    /*setting the arrow on top  of the text*/
+    footer img {
+        height: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /*making the footer larger for when you hover over it*/
+    footer img:hover {
+        transform: scale(1.1);
+    }
+
+/*changing the automatic blue colour of the linked text to its default colour*/
+a { 
+    color: inherit; 
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #fff205;
+    font-family: monospace;
+    border: black solid 3px;
+    box-shadow: black 5px 5px;
+    color: black;
+    width: 100%;
+ }
+  
+ /* Links inside the navbar */
+ .navbar a {
+    float: left;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    padding: 16px 3%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+ }
+  
+ /* The dropdown container */
+ .dropdown {
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    border-right: 2px solid black;
+    height: 54px;
+ }
+  
+ /* Dropdown button */
+ .dropdown .dropbtn {
+    font-size: 18px;
+    padding: 16px 16px;
+    background-color: #FFF205;
+    font-family: monospace; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+ }
+  
+ /* Add a yellow background color to navbar links on hover */
+ .navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: black;
+    color: #FFF205;
+ }
+  
+ /* Dropdown content (hidden by default) */
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fcef04;
+    z-index: 1;
+ }
+  
+ /* Links inside the dropdown */
+ .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border: black solid 1px;
+    min-width: 160px;
+ }
+  
+ /* Add a black background color to dropdown links on hover */
+ .dropdown-content a:hover {
+    background-color: black;
+    color: #fff205;
+ }
+  
+ /* Show the dropdown menu on hover */
+ .dropdown:hover .dropdown-content{
+    display: block;
+ }
+
+ /*removing default button border*/
+ button {
+    border: black;
+ }
+
+ /*styling the top part of the screen*/
+.top {
+    width: 100%;
+}
+.logo img {
+    height: 70px;
+    float: left;
+    margin: 10px;
+}
+
+.login img{
+    height: 40px;
+    float: right;
+    margin: 30px;
+}

@@ -1,0 +1,273 @@
+/*Calum Drysburgh*/
+/*setting up the background*/
+html { 
+    /*linking the background image*/
+    background: url(./background.png) center center; 
+    /*setting the background's size*/
+    background-size: 100%;
+    background-position: absolute;
+    background-repeat: repeat-y;
+    width: 100%;
+    height: 100%;
+    /*adding scroll animation for footer*/
+    scroll-behavior: smooth;
+}
+
+/*eliminating default body margin*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*setting the size and position of the title*/
+.titleimage img{
+    height: 60px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: rgb(240, 224, 224, 0.5);
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background: rgb(211, 196, 196, 0.5);
+  }
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: rgba(138, 136, 136, 0.5);
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f43665;
+    color: white;
+}
+
+/* Style the header */
+.header {
+    background-color: #FFF205;
+    border: black solid 2px;
+    box-shadow: black 5px 5px;
+    padding: 30px 40px;
+    color:black;
+    text-align: center;
+    font-family: monospace;
+}
+/* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the input */
+input {
+    margin: 0;
+    border: black solid 1px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+/* Style the "Add" button */
+.addBtn {
+    padding: 10px;
+    width: 20%;
+    background: #eb43b6;
+    color: black;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    border: black solid 1px;
+}
+
+.addBtn:hover {
+    background-color: black;
+    color: #eb43b6;
+}
+
+
+ /*setting the "back to top" button at the bottom of the page*/
+    /*setting the background style and position*/
+    footer {
+        margin-top: 20px;
+        background-color: #FF16B7;
+        border: solid black 3px;  
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    /*setting the arrow on top  of the text*/
+    footer img {
+        height: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /*making the footer larger for when you hover over it*/
+    footer img:hover {
+        transform: scale(1.1);
+    }
+
+/*changing the automatic blue colour of the linked text to its default colour*/
+a { 
+    color: inherit; 
+}
+
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #fff205;
+    font-family: monospace;
+    border: black solid 3px;
+    box-shadow: black 5px 5px;
+    color: black;
+    width: 100%;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    padding: 16px 3%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    border-right: 2px solid black;
+    height: 54px;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 18px;
+    padding: 16px 16px;
+    background-color: #FFF205;
+    font-family: monospace; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a yellow background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: black;
+    color: #FFF205;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fcef04;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border: black solid 1px;
+    min-width: 160px;
+  }
+  
+  /* Add a black background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: black;
+    color: #fff205;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+  
+  /*removing default button border*/
+  button {
+    border: black;
+  }
+
+ /*styling the top part of the screen*/
+ .top {
+    width: 100%;
+}
+.logo img {
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px;
+}

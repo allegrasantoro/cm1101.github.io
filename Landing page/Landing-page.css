@@ -1,0 +1,224 @@
+/*Callum Drysdale*/
+
+/*setting up the background*/
+html { 
+  /*linking the background image*/
+  background: url(./background.png) center center; 
+  /*setting the background's size*/
+  background-size: 100%;
+  background-position: absolute;
+  background-repeat: repeat-y;
+  width: 100%;
+  height: 100%;
+}
+
+/*eliminating default body margin*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#header{
+  width: 100%;
+  height: auto;
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+#login{
+  height: auto;
+  width: 30px;
+  padding: 20px 70px;
+  border: 2px solid;
+  box-shadow: 10px, 10px;
+  background-color: purple;
+  float: right;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.slideshow-container {
+  border: solid black 3px;
+  box-shadow: black 5px 5px;
+}
+
+#boxes {
+  display: block;
+  margin-left: 5%;
+}
+
+/*setting the dimension of the films box and its position*/
+.films img{
+  width: 30%;
+  float: left;
+  position: relative;
+  margin: 1%;
+}
+
+/*setting the dimension and position of the box with inverted colours and hiding it by default*/
+.films .img-inverted {
+  display: none;
+  position: relative;
+}
+
+/*making the inverted box show when hovered over with the mouse*/
+.films:hover .img-inverted {
+  float: left;
+  display: block;
+}
+
+/*hiding the normal image when hovering over it*/
+.films:hover .img-normal{
+  display: none;
+}
+
+
+/*setting the dimension of the events box and its position*/
+.events img{
+  width: 30%;
+  float: left;
+  position: relative;
+  margin: 1%;
+}
+
+/*setting the dimension and position of the box with inverted colours and hiding it by default*/
+.events .img-inverted {
+  display: none;
+  position: relative;
+}
+
+/*making the inverted box show when hovered over with the mouse*/
+.events:hover .img-inverted {
+  float: left;
+  display: block;
+}
+
+/*hiding the normal image when hovering over it*/
+.events:hover .img-normal{
+  display: none;
+}
+
+
+/*setting the dimension of the songs box and its position*/
+.songs img{
+  width: 30%;
+  float: left;
+  position: relative;
+  margin: 1%;
+}
+
+/*setting the dimension and position of the box with inverted colours and hiding it by default*/
+.songs .img-inverted {
+  display: none;
+  position: relative;
+}
+
+/*making the inverted box show when hovered over with the mouse*/
+.songs:hover .img-inverted {
+  float: left;
+  display: block;
+}
+
+/*hiding the normal image when hovering over it*/
+.songs:hover .img-normal{
+  display: none;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #fff205;
+  font-family: monospace;
+  border: black solid 3px;
+  box-shadow: black 5px 5px;
+  color: black;
+  width: 100%;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  padding: 16px 3%;
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin: 0;
+  border-right: 2px solid black;
+  height: 54px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 18px;
+  padding: 16px 16px;
+  background-color: #FFF205;
+  font-family: monospace; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a yellow background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: black;
+  color: #FFF205;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fcef04;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+  border: black solid 1px;
+  min-width: 160px;
+}
+
+/* Add a black background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: black;
+  color: #fff205;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+/*removing default button border*/
+button {
+  border: black;
+}
+
+/*styling the top part of the screen*/
+.top {
+  width: 100%;
+}
+.logo img {
+  height: 70px;
+  float: left;
+  margin: 10px;
+}
+
+.login img{
+  height: 40px;
+  float: right;
+  margin: 30px;
+}

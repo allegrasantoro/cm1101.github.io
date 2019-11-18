@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title> 80s Society</title>
+        <!--linking css sheet-->
+        <link rel="stylesheet" href="./logIn.css" type="text/css" >
+
+        <div class="top">
+            <!--logo-->
+            <div class="logo">
+                <img src="./logo.png" alt="logo">
+            </div>
+        </div>
+    
+        <!--toolbar-->
+        <div class="navbar">
+            <a href="../Landing page/index.html">Home</a>
+            <a href="../Events/Events.html">Events</a>
+            <a href="../Members/SocietyMembers.html">Members</a>
+                        
+            <!--dropdown menu-->
+            <div class="dropdown">
+
+                <button class="dropbtn">Recommended</button>
+
+                <div class="dropdown-content">
+                    <a href="../Films of the month/FOTM.html">Films of the month</a>
+                    <a href="../Songs of the month/SOTM.html">Songs of the month</a>
+                </div>
+            </div>
+
+            <a href="../Photogallery/photo-gallery.html">Photogallery</a>
+            <a href="../Contact us/Contact us.html">Contacts</a>
+            <a href="../FAQ/FAQ.html">FAQ</a>
+        </div>
+    </head>
+    
+    <body>
+        <script>
+            function myFunction()
+            {
+                //recieving values from forum and turning them into varibales 
+                var Usercode = document.getElementById("username").value;
+                var Passcode = document.getElementById("password").value;
+                //setting boolean varibles 
+                var Usercorrect = false ;
+                var Passcorrect = false ;
+                //setting arrays to hold usernames and passwords
+                var correctUsername = new Array("micheal","Tom","shingeru", "frances", "eleven") ;
+                var correctPassword = new Array("thriller123","topgun1","mario1", "dirty6", "11") ;
+                
+                
+                //iterating through the correctUsername array, if the username is found the Usercorrect variable turns true
+                for(let i = 0; i <= correctUsername.length; i++ ){
+                    if(Usercode === correctUsername[i]){
+                        var Usercorrect = true;
+                    }
+                }
+                
+                //iterating through the correctPassword array, if the password is found the Passcorrect variable turns true
+                for(let i = 0; i <= correctPassword.length; i++ ){
+                    if(Passcode === correctPassword[i]){
+                        var Passcorrect = true;
+                    }
+                }
+            
+                //checking if both the username and password is true, this will then output the username to the "login" div
+                if(Usercorrect === true && Passcorrect === true){
+                    alert("welcome " + Usercode);
+                    window.open("Chat.html");
+                }
+                else{
+                    alert("incorrect details");
+                }
+            }
+        </script>
+         
+         
+        <div id="outerdiv">
+            <!--adding image to mimic the Z layout-->
+            <div id="imagediv">
+                <img src="./concert.png" alt="beginning of the year 80s society concert">
+            </div>
+            <div class="outcontainer">
+                <!--log in form--> 
+                <div id="inconntainer">
+                    <h3> <strong>Log In</strong></h3>
+                        <form><br>
+                            <input type="text" id = "username"  placeholder=" Email">
+                            <br><br>
+                            <input type="text" id = "password"  placeholder=" Password">
+                            <br><br>
+                            <button onclick = "myFunction()"> SUBMIT </button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
